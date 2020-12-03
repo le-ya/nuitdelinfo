@@ -1,5 +1,5 @@
 const api = {
-  key: "96e9af4b45fc2ba77f7f910f341253d5",
+  key: "30484121c8d961e97bba6d66a61d29f2",
   base: "https://api.openweathermap.org/data/2.5/"
 }
 
@@ -32,10 +32,9 @@ function displayResults (weather) {
 
   let weather_1 = document.querySelector('.current .weather');
   weather_1.innerText = weather.weather[0].main;
-  if (weather.weather[0].main == "Rain"){
-    document.body.style.backgroundImage = "url('bgrain.png')";
+  if (weather.weather[0].main == "Clouds"){
+    console.log("lol");
   }
-
   let temperature = document.querySelector('.temp-degres');
   temperature.innerText = `Min ${Math.round(weather.main.temp_min)}  °c / ${Math.round(weather.main.temp_max)} Max °c`;
 }
