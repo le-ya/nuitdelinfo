@@ -1,0 +1,14 @@
+.menu {
+    width: 25%;
+    float:left;
+    background-color: red;
+}
+.main {
+    width: 75%;
+    float:left;
+    background-color: blue;
+}
+.body {
+    height: 100%;
+    background-color: pink;
+}
