@@ -32,6 +32,9 @@ function displayResults (weather) {
 
   let weather_1 = document.querySelector('.current .weather');
   weather_1.innerText = weather.weather[0].main;
+  if (weather.weather[0].main == "Rain"){
+    document.body.style.backgroundImage = "url('bgrain.png')";
+  }
 
   let temperature = document.querySelector('.temp-degres');
   temperature.innerText = `Min ${Math.round(weather.main.temp_min)}  °c / ${Math.round(weather.main.temp_max)} Max °c`;
