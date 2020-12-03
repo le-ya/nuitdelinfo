@@ -1,62 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Surfer</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='app.js'></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title></title>
+  <link rel="stylesheet" href="main.css"/>
 </head>
-<body class="body">
-    <div class = "navbar">
-        <ul>
-            <li class="dropdown">
-            <a href="javascript:void(0)" class="dropbtn">Menu</a>
-            <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-            </div>
-            </li>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#news">News</a></li>
-        </ul>
-    </div>
-    <div class = "input">
-        <form action = "/cgi-bin/hello_get.cgi" method = "get">
-            Ville:
-                <br> 
-                <input type = "text" name = "city" value = "" maxlength = "100" />
-                <br>
-               
-            Spot:
-                <br>   
-                <input type = "text" name = "spot" value = "" maxlength = "100" />
-                <br>
-            
-            Nom:
-                <br>    
-                <input type = "text" name = "watername" value = "" maxlength = "100" />
-                <br>
-            
-            Date:
-                <br>   
-                <input type = "date" name = "date" value = "" maxlength = "100" />
-                <br>
-            
-            Heure début:   
-                <br>
-                <input type = "type" name = "last_name" value = "" maxlength = "100" />
-                <br>
-            
-            Heure fin:
-                <br>
-                <input type = "time" name = "last_name" value = "" maxlength = "100" />
-                <br>   
-            <input type = "submit" value = "Submit" />
-         </form>
-
-    </div>      
+<body>
+  <div class="app">
+    <header>
+      <input type="text" autocomplete="off" class="search-box" placeholder="Recherche.." />
+    </header>
+    <main>
+      <section class="location">
+        <div class="city">Ville</div>
+        <div class="date">Date</div>
+      </section>
+      <div class="current">
+        <div class="temp"><span>°c</span></div>
+        <div class="weather">Ciel</div>
+        <div class="temp-degres">Degrès</div>
+      </div>
+    </main>
+  </div>
+  <script src="main.js"></script>
 </body>
 </html>
