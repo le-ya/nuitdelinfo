@@ -9,17 +9,54 @@
     <script src='app.js'></script>
 </head>
 <body class="body">
-    <ul>
-        <li class="dropdown">
-          <a href="javascript:void(0)" class="dropbtn">Menu</a>
-          <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-          </div>
-        </li>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#news">News</a></li>
-      </ul>      
+    <div class = "navbar">
+        <ul>
+            <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Menu</a>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+            </li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+        </ul>
+    </div>
+    <div class = "input">
+        <form action = "/cgi-bin/hello_get.cgi" method = "get">
+            Ville:
+                <br> 
+                <input type = "text" name = "city" value = "" maxlength = "100" />
+                <br>
+               
+            Spot:
+                <br>   
+                <input type = "text" name = "spot" value = "" maxlength = "100" />
+                <br>
+            
+            Nom:
+                <br>    
+                <input type = "text" name = "watername" value = "" maxlength = "100" />
+                <br>
+            
+            Date:
+                <br>   
+                <input type = "date" name = "date" value = "" maxlength = "100" />
+                <br>
+            
+            Heure début:   
+                <br>
+                <input type = "type" name = "last_name" value = "" maxlength = "100" />
+                <br>
+            
+            Heure fin:
+                <br>
+                <input type = "time" name = "last_name" value = "" maxlength = "100" />
+                <br>   
+            <input type = "submit" value = "Submit" />
+         </form>
+
+    </div>      
 </body>
 </html>
